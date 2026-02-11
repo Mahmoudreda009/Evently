@@ -14,7 +14,7 @@ abstract final class AppTheme {
     ),
 
     primaryColor: AppColors.blue,
-
+// textColor:,
     cardColor:AppColors.white,
     textTheme: const TextTheme(
       titleLarge: TextStyle(

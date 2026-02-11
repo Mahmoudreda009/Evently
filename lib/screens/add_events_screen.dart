@@ -117,11 +117,12 @@ class _AddEventScreenState extends State<AddEventScreen> {
                             },
                             child: Container(
                               padding: const EdgeInsets.all(15),
+                              margin: const EdgeInsets.only(right: 10),
 
                               decoration: BoxDecoration(
                                 color: isSelected
                                     ? Theme.of(context).colorScheme.primary
-                                    : Theme.of(context).colorScheme.surface,
+                                    : Theme.of(context).cardColor,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(
@@ -188,9 +189,10 @@ class _AddEventScreenState extends State<AddEventScreen> {
                                 Icons.calendar_month,
                                 color: Theme.of(context).primaryColor,
                               ),
+                              SizedBox(width: 15),
                               Text(
                                 "Event Date",
-                                style: AppTextStyles.black14Medium,
+                                style: Theme.of(context).textTheme.bodyMedium,
                               ),
                             ],
                           ),
@@ -227,10 +229,11 @@ class _AddEventScreenState extends State<AddEventScreen> {
                               Icon(
                                 Icons.access_time_filled_outlined,
                                 color: Theme.of(context).primaryColor,
-                              ),
+                              ),                              SizedBox(width: 15),
+
                               Text(
                                 "Event Time",
-                                style: AppTextStyles.black14Medium,
+                                style: Theme.of(context).textTheme.bodyMedium,
                               ),
                             ],
                           ),

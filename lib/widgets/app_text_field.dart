@@ -37,7 +37,7 @@ class AppTextField extends StatelessWidget {
           child: suffixIcon,
         ),
         hintText: hint,
-        hintStyle: AppTextStyles.grey14Regular,
+        hintStyle: Theme.of(context).textTheme.bodyMedium,
         border: border,
         contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
         focusedBorder: border,
